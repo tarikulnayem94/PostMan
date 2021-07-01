@@ -1,0 +1,216 @@
+Microsoft Windows [Version 10.0.18363.1621]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\Nayeem>node -v
+v14.17.1
+
+C:\Users\Nayeem>npm -v
+6.14.13
+
+C:\Users\Nayeem>npm install -g newman
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+C:\Users\Nayeem\AppData\Roaming\npm\newman -> C:\Users\Nayeem\AppData\Roaming\npm\node_modules\newman\bin\newman.js
++ newman@5.2.3
+added 156 packages from 200 contributors in 40.525s
+
+C:\Users\Nayeem>newman -v
+5.2.3
+
+C:\Users\Nayeem>npm install newmman-reporter-html
+npm ERR! code E404
+npm ERR! 404 Not Found - GET https://registry.npmjs.org/newmman-reporter-html - Not found
+npm ERR! 404
+npm ERR! 404  'newmman-reporter-html@latest' is not in the npm registry.
+npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
+npm ERR! 404
+npm ERR! 404 Note that you can also install from a
+npm ERR! 404 tarball, folder, http url, or git url.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Nayeem\AppData\Roaming\npm-cache\_logs\2021-06-17T09_48_28_253Z-debug.log
+
+C:\Users\Nayeem>npm install newman-reporter-html
+npm WARN saveError ENOENT: no such file or directory, open 'C:\Users\Nayeem\package.json'
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN enoent ENOENT: no such file or directory, open 'C:\Users\Nayeem\package.json'
+npm WARN newman-reporter-html@1.0.5 requires a peer of newman@4 but none is installed. You must install peer dependencies yourself.
+npm WARN Nayeem No description
+npm WARN Nayeem No repository field.
+npm WARN Nayeem No README data
+npm WARN Nayeem No license field.
+
++ newman-reporter-html@1.0.5
+added 12 packages from 44 contributors and audited 12 packages in 4.846s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 4 vulnerabilities (2 low, 1 high, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+C:\Users\Nayeem>npm install -g json-server
+C:\Users\Nayeem\AppData\Roaming\npm\json-server -> C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\lib\cli\bin.js
++ json-server@0.16.3
+added 182 packages from 80 contributors in 34.402s
+
+C:\Users\Nayeem>json-server info.json
+
+  \{^_^}/ hi!
+
+  Loading info.json
+SyntaxError: Malformed JSON in file: info.json
+Unexpected token ] in JSON at position 728
+    at FileAsync.parse [as deserialize] (<anonymous>)
+    at C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\lowdb\adapters\FileAsync.js:41:35
+
+C:\Users\Nayeem>json-server info.json
+
+  \{^_^}/ hi!
+
+  Loading info.json
+SyntaxError: Malformed JSON in file: info.json
+Unexpected token ] in JSON at position 728
+    at FileAsync.parse [as deserialize] (<anonymous>)
+    at C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\lowdb\adapters\FileAsync.js:41:35
+
+C:\Users\Nayeem>json-server package-lock.json
+
+  \{^_^}/ hi!
+
+  Loading package-lock.json
+  Done
+Error: Type of "requires" (boolean)  is not supported. Use objects or arrays of objects.
+    at C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\lib\server\router\index.js:83:11
+    at C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\lodash\lodash.js:4967:15
+    at baseForOwn (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\lodash\lodash.js:3032:24)
+    at C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\lodash\lodash.js:4936:18
+    at Function.forEach (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\lodash\lodash.js:9410:14)
+    at C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\lodash\lodash.js:4430:28
+    at arrayReduce (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\lodash\lodash.js:697:21)
+    at baseWrapperValue (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\lodash\lodash.js:4429:14)
+    at LodashWrapper.wrapperValue (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\lodash\lodash.js:9114:14)
+    at Object.module.exports [as router] (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\lib\server\router\index.js:84:6)
+
+C:\Users\Nayeem>json-server info.json
+
+  \{^_^}/ hi!
+
+  Loading info.json
+SyntaxError: Malformed JSON in file: info.json
+Unexpected token ] in JSON at position 728
+    at FileAsync.parse [as deserialize] (<anonymous>)
+    at C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\lowdb\adapters\FileAsync.js:41:35
+
+C:\Users\Nayeem>npm install -g json-server
+C:\Users\Nayeem\AppData\Roaming\npm\json-server -> C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\lib\cli\bin.js
++ json-server@0.16.3
+updated 1 package in 12.465s
+
+C:\Users\Nayeem>json-server info.json
+
+  \{^_^}/ hi!
+
+  Loading info.json
+SyntaxError: Malformed JSON in file: info.json
+Unexpected token ] in JSON at position 728
+    at FileAsync.parse [as deserialize] (<anonymous>)
+    at C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\lowdb\adapters\FileAsync.js:41:35
+
+C:\Users\Nayeem>json-server --watch info.json
+
+  \{^_^}/ hi!
+
+  Loading info.json
+SyntaxError: Malformed JSON in file: info.json
+Unexpected token ] in JSON at position 728
+    at FileAsync.parse [as deserialize] (<anonymous>)
+    at C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\lowdb\adapters\FileAsync.js:41:35
+
+C:\Users\Nayeem>json-server --watch info.json
+
+  \{^_^}/ hi!
+
+  Loading info.json
+  Done
+
+  Resources
+  http://localhost:3000/employees
+
+  Home
+  http://localhost:3000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+GET /employees 200 18.756 ms - 366
+HEAD /users 404 3.346 ms - 2
+GET /users 404 4.413 ms - 2
+GET /employees 200 6.718 ms - 366
+GET /employees/2 200 13.315 ms - 105
+HEAD /employehttp:/localhost:3000/employeeses 404 8.600 ms - 2
+GET /employehttp:/localhost:3000/employeeses 404 34.036 ms - 2
+POST /employees%0A 404 6.656 ms - 2
+POST /employees%0A 404 5.320 ms - 2
+POST /employees%20%0A 404 2.331 ms - 2
+POST /employees%20%0A 404 113.518 ms - 2
+POST /employees%20%0A 404 3.812 ms - 2
+POST /employees%20%0A 404 5.065 ms - 2
+POST /employees%20%0A 404 2.027 ms - 2
+POST /employees%20%0A 404 4.730 ms - 2
+POST /employees 201 15.097 ms - 102
+POST /employees 201 9.249 ms - 102
+  info.json has changed, reloading...
+
+  Loading info.json
+  Done
+
+  Resources
+  http://localhost:3000/employees
+
+  Home
+  http://localhost:3000
+
+GET /employees 304 7.284 ms - -
+GET /employees 304 6.193 ms - -
+POST /employees 201 4.421 ms - 102
+GET /employees 200 8.297 ms - 482
+SyntaxError: Unexpected string in JSON at position 58
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:387:35)
+    at endReadableNT (internal/streams/readable.js:1317:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+PUT /employees/4 400 8.126 ms - -
+SyntaxError: Unexpected string in JSON at position 52
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:387:35)
+    at endReadableNT (internal/streams/readable.js:1317:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+PUT /employees/4 400 2.546 ms - -
+SyntaxError: Unexpected token f in JSON at position 11
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\Nayeem\AppData\Roaming\npm\node_modules\json-server\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:387:35)
+    at endReadableNT (internal/streams/readable.js:1317:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+PUT /employees/4 400 1.489 ms - -
+PUT /employees/4 200 8.368 ms - 106
+HEAD /employees/4 200 3.811 ms - 106
+GET /employees/4 200 4.926 ms - 106
+GET /employees/4 200 4.283 ms - 106
+DELETE /employees/4 200 9.726 ms - 2
+GET /employees 200 4.266 ms - 366

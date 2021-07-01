@@ -1,0 +1,81 @@
+//Check status code................................................................
+
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+// Check Body data.....................................................................
+
+var response = JSON.parse(responseBody);
+
+tests["first_name"] = response.data.first_name == "Janet";
+tests["last_name"] = response.data.last_name == "Weaver";
+tests["avatar"] = response.data.avatar == "https://reqres.in/img/faces/2-image.jpg";
+
+
+// Multiple assertion...................................................................
+
+pm.test("multiple value check", function () {
+    responseJson=pm.response.json();
+    pm.expect(responseJson.data.id).to.eql(2);
+    pm.expect(responseJson.data.email).to.eql("janet.weaver@reqres.in");
+    pm.expect(responseJson.data.first_name).to.eql("Janet");
+    pm.expect(responseJson.data.last_name).to.eql("Weaver");
+    });
+
+//Body content check.................................................................
+
+pm.test("Body content string", function(){
+    pm.expect(pm.response.text()).to.include("janet.weaver@reqres.in");
+})
+
+//HTTP Status code check...............................................................
+
+pm.test("successful status code", function(){
+    pm.expect(pm.response.code).to.be.oneOf([200,201,401]);
+})
+
+//Header Check..........................................................................
+
+pm.test("Content type header check", function(){
+    pm.response.to.have.header("Content-Type");
+})
+
+pm.test("Content type value", function(){
+    pm.expect(pm.response.headers.get("Content-Type")).to.eql("application/json; charset=utf-8");
+})
+
+//Cookies Check...............................................................
+
+pm.test("Cookies is present", function(){
+    pm.response(pm.cookies.has("__cfduid")).to.be.true;
+})
+
+pm.test("cookies value check", function(){
+    pm.expect(pm.response.cookies.get("__cfduid")).to.eql("cookies value");
+})
+
+Response time..............................................................................
+
+pm.test("check response Time", function(){
+    pm.expect(pm.response.responseTime).to.be.below(100);
+})
+
+//Check Response Body size................................................................
+
+pm.test("check response size", function(){
+    pm.expect(pm.response.responseSize).to.be.eql(1220);
+})
+
+var size=0;
+for (var count in responseBody) {
+    if(responseBody.hasOwnProperty(count))
+        size += 1;
+}
+console.log("BODY SIZE = " + size);
+
+
+
+
+
+

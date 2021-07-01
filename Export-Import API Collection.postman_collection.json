@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "aad3010a-b5c5-4119-ad16-4461116b4774",
+		"name": "Export/Import API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Countries API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/name/bangladesh",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"name",
+						"bangladesh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Capital City API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/capital/dhaka",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"capital",
+						"dhaka"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

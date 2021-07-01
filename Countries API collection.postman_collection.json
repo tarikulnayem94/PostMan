@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "d23bf5a1-9c17-4bcc-ab04-af09915685b3",
+		"name": "Countries API collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Countries API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/name/india",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"name",
+						"india"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Capital City API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/capital/DELHI",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"capital",
+						"DELHI"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
