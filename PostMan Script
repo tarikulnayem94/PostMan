@@ -1,0 +1,22 @@
+
+
+console.log(pm.response.code);
+console.log(pm.response.responseTime)
+
+
+console.log("Check global veriable :" + pm.globals.get("url"));
+console.log("Check global veriable :" + pm.variables.get("url"));
+
+
+console.log("Check local veriable :" + pm.variables.get("localVerable"));
+
+
+console.log("Check enviroment veriable :" + pm.environment.get("userid"));
+console.log("Check enviroment veriable :" + pm.variables.get("userid"));
+
+
+postman.setNextRequest("Login User");
+postman.setNextRequest("null")
+
+    var jsonData = pm.response.json();
+    pm.environment.set("userid", jsonData.id);
