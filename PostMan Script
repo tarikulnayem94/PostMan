@@ -65,3 +65,26 @@ pm.test("schema is valid", function(){
     pm.expect(tv4.validate(json, schema)).to.be.true;
 })
 
+
+
+
+postman - how to generate random number in specific range?
+-----------------------------------------------------------------
+pm.globals.set('randomNumber', Math.floor(Math.random() * 10));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
