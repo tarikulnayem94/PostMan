@@ -72,13 +72,18 @@ postman - how to generate random number in specific range?
 -----------------------------------------------------------------
 pm.globals.set('randomNumber', Math.floor(Math.random() * 10));
 
+----------------------------------------------------------
 
+pm.variables.set("name", "postman");
+console.log(pm.variables.get("name"));
 
+let varURL = pm.variables.get("url");
+console.log("request url : " + varURL);
 
+let globalVAR = pm.globals.get("env");
+console.log(globalVAR);
 
-
-
-
+------------------------------------------------------------
 
 
 
